@@ -1,0 +1,41 @@
+.tituloPrincipal{
+    font-size: 40px;
+    font-family: Consolas;
+    color: red;
+    text-align: center;
+}
+.bordes{
+    width: 100%;
+    border: 10px;
+    border-color: black;
+    border-style: double;
+    background-color: bisque;
+}
+
+.subTitulos{
+    font-size: 22px;
+    font-family: Consolas;
+    color: black;
+}
+
+.panelLateral{
+    height: 100%;
+    border: 10px;
+    border-color: black;
+    border-style: double;
+    width: 20%;
+    padding-left: 15px;
+    float: left;
+    font-style: italic;
+    background-color: lightgray;
+}
+
+label {
+    display: block;
+    margin: .5em 0 0 0;
+    }
+
+.btn {
+    display: block;
+    margin: 1em 0;
+    }

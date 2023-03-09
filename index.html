@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos CSS/Estilos.css">
+    <title>Practica 4 Formulario</title>
+</head>
+<body>
+    <header>
+        <table class="bordes">
+            <tr>
+                <td><h1 class="tituloPrincipal">Formulario de Inscripción</h1></td>
+            </tr>
+        </table>
+    </header>
+    <br>
+    <nav>
+        <aside class="panelLateral">
+            <h2 class="subTitulos">Visita otras páginas</h2>
+        </aside>
+    </nav>
+    <form class="form" action="/action_page.php" method="get" target="_blank">
+        <fieldset>
+        <legend>Datos Personales</legend>
+
+        <label for="nombre">Nombre</label>
+        <input type="text"  id="nombre" name="nombre" />
+
+        <label for="apellidos">Apellidos</label>
+        <input type="text" id="apellidos" name="apellidos" size="50" />
+
+        <label for="rfc">Direccion</label>
+        <input type="text" id="rfc" name="rfc" size="13" maxlength="13" pattern="[A-Za-z]{4}[0-9]{6}[A-Za-z0-9]{3}"/>
+
+        <label for="apellidos">Telefono</label>
+        <input type="text" id="apellidos" name="apellidos" size="50" />
+
+        <label for="apellidos">Correo Electronico</label>
+        <input type="text" id="apellidos" name="apellidos" size="50" />
+
+        <label for="apellidos">Documento</label>
+        <input type="text" id="apellidos" name="apellidos" size="50" />
+
+        <label for="apellidos">Fecha de Nacimiento</label>
+        <input type="text" id="apellidos" name="apellidos" size="50" />
+
+        <input class="btn" type="submit" value="Darme de alta" />
+
+        </fieldset>
+      </form>
+
+      <div class="contacto">
+        <h2>Formulario de Inscripción Gimnasio</h2>
+        <form class="form" action="/action_page.php" method="get" novalidate>
+              <fieldset>
+                  <legend>Capacitación</legend>
+                  <label>
+                    Áreas:
+                    </label> <br>
+                  <select class="turno" name="turno">
+                      <option value="matutino">Pesas</option>
+                      <option value="vespertino" selected>Cardio</option>
+                      <option value="nocturno">Spinning</option>
+                      <option value="nocturno">Alberca</option>
+                  </select>
+                  <br>
+                  <label>
+                    Horario:
+                    </label> <br> 
+                  <select class="turno" name="turno">
+                      <option value="matutino">Mañana</option>
+                      <option value="vespertino" selected>Tarde</option>
+                      <option value="nocturno">Noche</option>
+                     
+                  </select>
+                  <br>
+                  <label>
+                    Días:
+                    </label> <br> 
+                  <select class="turno" name="turno">
+                      <option value="matutino">Lunes</option>
+                      <option value="vespertino" selected>Martes</option>
+                      <option value="nocturno">Miércoles</option>
+                      <option value="nocturno">Jueves</option>
+                      <option value="nocturno">Viernes</option>
+                      <option value="nocturno">Sábado</option>
+                  </select>
+              </fieldset>
+
+              <br><br>
+              <fieldset>
+                <legend>Plan de pago</legend>
+                
+                <radiogroup>
+                    <input type="radio" id="sexo" name="sexo" value="hombre" autofocus checked> Contado/Efectivo<br>
+                    <input type="radio" id="sexo" name="sexo" value="mujer"> Tarjeta Crédito<br>
+                    <input type="radio" id="sexo" name="sexo" value="otro"> Tarjeta Débito<br>
+                    <input type="radio" id="sexo" name="sexo" value="otro"> Transferencia<br>
+                </radiogroup>              
+            </fieldset> 
+             
+      </form>
+  </div>
+</body>
+</html>
