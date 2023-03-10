@@ -1,41 +1,55 @@
-.tituloPrincipal{
-    font-size: 40px;
-    font-family: Consolas;
-    color: red;
-    text-align: center;
-}
-.bordes{
-    width: 100%;
-    border: 10px;
-    border-color: black;
-    border-style: double;
-    background-color: bisque;
+.tituloPrincipal {
+  font-size: 40px;
+  font-family: Consolas;
+  color: red;
+  text-align: center;
 }
 
-.subTitulos{
-    font-size: 22px;
-    font-family: Consolas;
-    color: black;
+.bordes {
+  width: 100%;
+  border: 10px;
+  border-color: black;
+  border-style: double;
+  background-color: bisque;
 }
 
-.panelLateral{
-    height: 100%;
-    border: 10px;
-    border-color: black;
-    border-style: double;
-    width: 20%;
-    padding-left: 15px;
-    float: left;
-    font-style: italic;
-    background-color: lightgray;
+.subTitulos {
+  font-size: 22px;
+  font-family: Consolas;
+  color: black;
+}
+
+.panelLateral {
+  height: 100%;
+  border: 10px;
+  border-color: black;
+  border-style: double;
+  width: 20%;
+  padding-left: 15px;
+  float: left;
+  font-style: italic;
+  background-color: lightgray;
+  margin-right: 20px;
 }
 
 label {
-    display: block;
-    margin: .5em 0 0 0;
-    }
+  display: block;
+  margin: 0.5em 0 0 0;
+}
+
+fieldset {
+  padding: 20px;
+  border: 6px double cornflowerblue;
+  background-color: khaki;
+}
 
 .btn {
-    display: block;
-    margin: 1em 0;
-    }
+  display: block;
+  margin: 1em 0;
+}
+
+.divForm {
+  float: left;
+  width: 30%;
+  margin-right: 7%;
+}
