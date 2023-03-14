@@ -1,14 +1,14 @@
 <?php
-$nombre = $_POST['nombre'];
-$apellidos = $_POST['apellidos'];
-$direccion = $_POST['direccion'];
-$telefono = $_POST['telefono'];
-$correo = $_POST['correo'];
-$fecha= $_POST['Fecha'];
-$area= $_POST['area'];
-$turno= $_POST['turno'];
-$dias= $_POST['dias'];
-$pago= $_POST['pago'];
+$nombre = $_GET['nombre'];
+$apellidos = $_GET['apellidos'];
+$direccion = $_GET['direccion'];
+$telefono = $_GET['telefono'];
+$correo = $_GET['correo'];
+$fecha= $_GET['Fecha'];
+$area= $_GET['area'];
+$turno= $_GET['turno'];
+$dias= $_GET['dias'];
+$pago= $_GET['pago'];
 ?>
 
 <!DOCTYPE html>
