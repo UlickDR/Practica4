@@ -19,11 +19,50 @@
     <nav>
       <aside class="panelLateral">
         <h2 class="subTitulos">Visita otras páginas</h2>
+        <ul>
+          <li>
+            <a href="https://ulickdr.github.io/Practica3/"
+              ><h1>Práctica 3</h1></a
+            >
+          </li>
+          <li>
+            <a href="https://www.youtube.com/"><h1>Youtube</h1></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/watch?v=YcbFnIoZfp8"
+              >Ejercicios para principiantes</a
+            >
+          </li>
+        </ul>
+      </aside>
+    </nav>
+
+    <nav>
+      <aside class="panelLateral2">
+        <br />
+        <center>
+          <img
+            src="https://i.pinimg.com/originals/23/2e/cc/232eccafdff23d42596f294d3f5f2d25.jpg"
+            width="50%"
+            height="50%"
+            alt="logo"
+          />
+        </center>
+        <br />
+        <center>
+          <img
+            src="https://previews.123rf.com/images/messer16/messer161709/messer16170900059/86487919-anuncios-de-prote%C3%ADnas.jpg"
+            width="50%"
+            height="50%"
+            alt="anuncioProteina"
+          />
+        </center>
+        <br />
       </aside>
     </nav>
 
     <div>
-      <form action="/action_page.php" method="get" target="_blank">
+      <form action="envio.php" method="post">
         <fieldset>
           <div class="divForm">
             <legend>Datos Personales</legend>
@@ -34,85 +73,71 @@
             <label for="apellidos">Apellidos</label>
             <input type="text" id="apellidos" name="apellidos" size="50" />
 
-            <label for="rfc">Direccion</label>
+            <label for="direccion">Direccion</label>
+            <input type="text" id="direccion" name="direccion" size="50" />
+
+            <label for="telefono">Telefono</label>
+            <input type="text" id="telefono" name="telefono" size="50" />
+
+            <label for="correo">Correo Electronico</label>
+            <input type="text" id="correo" name="correo" size="50" />
+
+            <label for="start">Fecha de nacimiento:</label>
+
             <input
-              type="text"
-              id="rfc"
-              name="rfc"
-              size="13"
-              maxlength="13"
-              pattern="[A-Za-z]{4}[0-9]{6}[A-Za-z0-9]{3}"
+              type="date"
+              id="fecha"
+              name="Fecha"
+              min="1920-01-01"
+              max="2050-01-01"
             />
-
-            <label for="apellidos">Telefono</label>
-            <input type="text" id="apellidos" name="apellidos" size="50" />
-
-            <label for="apellidos">Correo Electronico</label>
-            <input type="text" id="apellidos" name="apellidos" size="50" />
-
-            <label for="apellidos">Documento</label>
-            <input type="text" id="apellidos" name="apellidos" size="50" />
-
-            <label for="apellidos">Fecha de Nacimiento</label>
-            <input type="text" id="apellidos" name="apellidos" size="50" />
-
-            <input class="btn" type="submit" value="Darme de alta" />
           </div>
-
+        
           <div class="divForm2">
             <legend>Capacitación</legend>
-            <label> Áreas: </label> <br />
-            <select class="turno" name="turno">
-              <option value="matutino" selected>Pesas</option>
-              <option value="vespertino">Cardio</option>
-              <option value="nocturno">Spinning</option>
-              <option value="nocturno">Alberca</option>
+            <label for="areas"> Áreas: </label> <br />
+            <select id="areas" name="area">
+              <option value="Pesas" selected>Pesas</option>
+              <option value="Cardio">Cardio</option>
+              <option value="Spinning">Spinning</option>
+              <option value="Alberca">Alberca</option>
             </select>
             <br />
             <label> Horario: </label> <br />
-            <select class="turno" name="turno">
-              <option value="matutino" selected>Mañana</option>
-              <option value="vespertino" >Tarde</option>
-              <option value="nocturno">Noche</option>
+            <select id="turno" name="turno">
+              <option value="Matutino" selected>Mañana</option>
+              <option value="Vespertino">Tarde</option>
+              <option value="Nocturno">Noche</option>
             </select>
             <br />
-            <label> Días: </label> <br />
-            <select class="turno" name="turno">
-              <option value="matutino" selected>Lunes</option>
-              <option value="vespertino">Martes</option>
-              <option value="nocturno">Miércoles</option>
-              <option value="nocturno">Jueves</option>
-              <option value="nocturno">Viernes</option>
-              <option value="nocturno">Sábado</option>
-            </select>
+            <br />
+            <label> Días: </label>
+            <input type="checkbox" name="dias[]" value="lunes" />Lunes
+            <input type="checkbox" name="dias[]" value="martes" /> Martes
+            <input type="checkbox" name="dias[]" value="miercoles" /> Miércoles
+            <input type="checkbox" name="dias[]" value="jueves" /> Jueves
+            <input type="checkbox" name="dias[]" value="viernes" /> Viernes
           </div>
+          <div class="divForm3">
+            <legend>Plan de pago</legend>
+            <radiogroup>
+              <input type="radio" name="pago" value="Contado/Efectivo" autofocus checked />
+              Contado/Efectivo<br />
+              <input type="radio" name="pago" value="Tarjeta de Credito" /> Tarjeta
+              Crédito<br />
+              <input type="radio" name="pago" value="Tarjeta de Debito" /> Tarjeta
+              Débito<br />
+              <input type="radio" name="pago" value="Transferencia" />
+              Transferencia<br />
+            </radiogroup>
+          </div>
+          <input class="btn" type="submit" value="Darme de alta" />
         </fieldset>
       </form>
     </div>
-   
-        <br /><br />
-        <fieldset>
-          <legend>Plan de pago</legend>
-
-          <radiogroup>
-            <input
-              type="radio"
-              id="sexo"
-              name="sexo"
-              value="hombre"
-              autofocus
-              checked
-            />
-            Contado/Efectivo<br />
-            <input type="radio" id="sexo" name="sexo" value="mujer" /> Tarjeta
-            Crédito<br />
-            <input type="radio" id="sexo" name="sexo" value="otro" /> Tarjeta
-            Débito<br />
-            <input type="radio" id="sexo" name="sexo" value="otro" />
-            Transferencia<br />
-          </radiogroup>
-        </fieldset>
-      </form>
-    </div>
+    <br />
+    <footer class="footer">
+      <h1>©Copyright Equipo 2</h1>
+    </footer>
   </body>
 </html>
