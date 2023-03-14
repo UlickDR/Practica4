@@ -1,3 +1,9 @@
+body{
+      background-image: url("https://wallpapercave.com/wp/BLLOJ5v.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+}
+
 .tituloPrincipal {
   font-size: 40px;
   font-family: Consolas;
