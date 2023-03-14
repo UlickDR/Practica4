@@ -17,6 +17,7 @@
   font-size: 22px;
   font-family: Consolas;
   color: black;
+  text-align: center;
 }
 
 .panelLateral {
@@ -32,15 +33,32 @@
   margin-right: 20px;
 }
 
+.panelLateral2 {
+  height: 100%;
+  border: 10px;
+  border-color: black;
+  border-style: double;
+  width: 28%;
+  padding-left: 15px;
+  float: right;
+  background-color: lightgray;
+}
+
+.nav1{
+  float: right;
+}
+
 label {
   display: block;
   margin: 0.5em 0 0 0;
 }
 
 fieldset {
+  position: relative;
   padding: 20px;
   border: 6px double cornflowerblue;
   background-color: khaki;
+  width: fit-content;
 }
 
 .btn {
@@ -49,7 +67,41 @@ fieldset {
 }
 
 .divForm {
-  float: left;
-  width: 30%;
-  margin-right: 7%;
+ float: left;
+ margin-right: 10em;
+ margin-bottom: 2em;
+}
+
+.divForm2{
+  margin-top: 150px;
+}
+
+.divForm3{
+  position: absolute;
+  bottom: 28%;
+  right: 30%;
+}
+
+legend{
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Consolas;
+  color: brown;
+}
+
+label{
+  font-size: 20px;
+  font-family: Consolas;
+  color: teal;
+}
+
+footer {
+  font-family: Consolas;
+  font-size: 10px;
+  color: white;
+  text-align: center;
+  background-color: coral;
+  width: 99%;
+  height: auto;
+  padding: 0.5%;
 }
