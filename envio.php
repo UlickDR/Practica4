@@ -37,6 +37,7 @@ $pago= $_POST['pago'];
          <tr><td><h2 class="subTitulos">Turno: <?php echo "$turno" ?></h2></td></tr>
          <tr><td><h2 class="subTitulos">Dias: <?php foreach ($dias as $dia) { echo $dia . " "; } ?></h2></td></tr>
          <tr><td><h2 class="subTitulos">Método de pago: <?php echo "$pago" ?></h2></td></tr>
+         <tr><td><h2 class="subTitulos"><a href="index.html"> Regresar </a></h2></td></tr>
     </table>
     </body>
 </html>
